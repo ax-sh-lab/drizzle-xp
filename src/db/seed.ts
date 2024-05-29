@@ -1,5 +1,5 @@
-import { db } from './db';
-import * as schema from './schema';
+import { db } from './db.ts';
+import * as schema from './schema.ts';
 
 await db.insert(schema.movies).values([
   {
