@@ -1,21 +1,23 @@
 {
-	"name": "drizzle-xp",
-	"module": "index.ts",
-	"type": "module",
-	"devDependencies": {
-		"@types/bun": "latest",
-		"drizzle-kit": "^0.21.4"
-	},
-	"peerDependencies": {
-		"typescript": "^5.0.0"
-	},
-	"dependencies": {
-		"drizzle-orm": "^0.30.10"
-	},
-	"scripts": {
-		"dev": "bun --hot src/index.ts",
-		"db:gen": "bunx drizzle-kit generate --dialect sqlite --schema ./src/schema.ts",
-    "db:mig":"bun run src/migrate.ts",
-    "db:seed":"bun run src/seed.ts"
-	}
+  "name": "drizzle-xp",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "drizzle-kit": "^0.21.4",
+    "vitest": "^1.6.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.30.10"
+  },
+  "scripts": {
+    "dev": "bun --hot src/index.ts",
+    "db:gen": "bunx drizzle-kit generate --dialect sqlite --schema ./src/schema.ts",
+    "db:mig": "bun run src/migrate.ts",
+    "db:seed": "bun run src/seed.ts",
+    "test": "vitest run"
+  }
 }
