@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "bun --hot src/index.ts",
     "db:gen": "bunx drizzle-kit generate --dialect sqlite --schema src/schema.ts",
-    "db:mig": "bun run src/db/migrate.ts",
-    "db:seed": "bun run src/db/seed.ts"
+    "db:mig": "bun run src/migrate.ts",
+    "db:seed": "bun run src/seed.ts"
   }
 }
