@@ -1,0 +1,16 @@
+{
+  "name": "bun-sqlite",
+  "module": "src/index.ts",
+  "type": "module",
+
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+
+  "scripts": {
+    "dev": "bun --hot src/index.ts",
+    "db:gen": "bunx drizzle-kit generate --dialect sqlite --schema src/schema.ts",
+    "db:mig": "bun run src/migrate.ts",
+    "db:seed": "bun run src/seed.ts"
+  }
+}
