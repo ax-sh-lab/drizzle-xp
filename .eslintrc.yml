@@ -1,6 +1,6 @@
 root: true
 extends:
-  - "plugin:drizzle/all"
+  - 'plugin:drizzle/all'
 parser: '@typescript-eslint/parser'
 parserOptions:
   project: './tsconfig.json'
