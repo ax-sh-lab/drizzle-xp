@@ -21,6 +21,6 @@
     "db:gen": "bunx drizzle-kit generate --dialect sqlite --schema ./src/schema.ts",
     "db:mig": "bun run src/migrate.ts",
     "db:seed": "bun run src/seed.ts",
-    "test": "vitest run"
+    "test": "bun x -b  vitest run"
   }
 }
